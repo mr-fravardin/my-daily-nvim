@@ -1,5 +1,3 @@
-vim.opt.termguicolors = true
-
 vim.cmd [[highlight IndentBlanklineIndent1 guibg=#282A3A gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent2 guibg=#4D455D gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine]]
