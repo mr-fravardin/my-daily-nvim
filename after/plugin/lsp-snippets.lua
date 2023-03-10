@@ -4,16 +4,16 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 require'lspconfig'.cssls.setup {
-  capabilities = capabilities,
+    capabilities = capabilities,
 }
 require'lspconfig'.html.setup {
-  capabilities = capabilities,
+    capabilities = capabilities,
 }
 require'lspconfig'.jsonls.setup {
-  capabilities = capabilities,
+    capabilities = capabilities,
 }
 require'lspconfig'.eslint.setup{
-  capabilities = capabilities,
+    capabilities = capabilities,
 }
 require'lspconfig'.pyright.setup{
     capabilities = capabilities,
