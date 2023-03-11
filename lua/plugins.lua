@@ -50,6 +50,14 @@ return require("packer").startup(function(use)
     -- For indentation
     use "lukas-reineke/indent-blankline.nvim"
 
+    -- For terminal toggle
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
+
+    -- For github copilot
+    use "github/copilot.vim"
+
     -- For LSP
     use "neovim/nvim-lspconfig"
 
