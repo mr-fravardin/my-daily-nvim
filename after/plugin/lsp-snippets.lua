@@ -1,5 +1,8 @@
 -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities2 = require('cmp_nvim_lsp').default_capabilities()
+
+-- Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 -- enable snippets
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
@@ -16,6 +19,6 @@ require'lspconfig'.eslint.setup{
     capabilities = capabilities,
 }
 require'lspconfig'.pyright.setup{
-    capabilities = capabilities,
+    capabilities = capabilities2,
 }
 
