@@ -12,8 +12,8 @@ key("n", "<leader>pv", vim.cmd.Ex)
 
 -- CTRL + s to save
 key("n", "<C-s>", [[:w<CR>]])
--- leader + q to quit the buffer and nvim
-key("n", "<leader>q", [[:q<CR>]])
+-- leader + q to quit the buffer and nvim without saving
+key("n", "<leader>q", [[:q!<CR>]])
 
 -- for commenting
 -- leader + / for comment
