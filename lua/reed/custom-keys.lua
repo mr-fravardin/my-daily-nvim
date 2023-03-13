@@ -8,7 +8,7 @@ key("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
 -- leader + pv to exit and return to previous buffer
-key("n", "<leader>pv", vim.cmd.Ex)
+key("n", "<leader>z", vim.cmd.Ex)
 
 -- CTRL + s to save
 key("n", "<C-s>", [[:w<CR>]])
